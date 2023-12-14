@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Bundle Customizer</title>
+  <link href="style.css" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body>
+  <div id="customizer">
+    <h2>Chocolate Bundle Customizer</h2>
+
+    <div class="chocolate-item">
+      <span>Dark Chocolate</span>
+      <input type="number" id="darkChocolateQuantity" min="0" max="8" value="0">
+    </div>
+
+    <div class="chocolate-item">
+      <span>Milk Chocolate</span>
+      <input type="number" id="milkChocolateQuantity" min="0" max="8" value="0">
+    </div>
+
+    <div class="chocolate-item">
+      <span>White Chocolate</span>
+      <input type="number" id="whiteChocolateQuantity" min="0" max="8" value="0">
+    </div>
+
+    <button onclick="calculateTotalPrice()">Calculate Total Price</button>
+
+    <div id="total-price"></div>
+  </div>
+
+</body>
+</html>
